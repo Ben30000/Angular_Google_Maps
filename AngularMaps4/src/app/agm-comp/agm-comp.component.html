@@ -1,0 +1,21 @@
+<agm-map
+[latitude]="lat"
+[longitude]="lng"
+[zoom]="3.5"
+(mapClick)="moveMarker($event.coords.lat, $event.coords.lng)"
+
+>
+<agm-marker
+  [latitude]="marker.lat"
+  [longitude]="marker.lng"
+  
+  [markerDraggable]="true"
+  (markerClick)="selectMarker($event)"
+  (drag)="dragMarker($event.coords.lat, $event.coords.lng)"
+>
+</agm-marker>
+
+</agm-map>
+<p *ngIf="selectedMarker">
+Lat: {{ selectedMarker.lat }} Lng: {{ selectedMarker.lng }}
+</p>
