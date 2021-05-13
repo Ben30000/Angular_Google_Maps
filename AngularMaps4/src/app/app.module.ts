@@ -14,7 +14,7 @@ import { AgmCompComponent } from './agm-comp/agm-comp.component';
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAoqtB-f0GuSFXGcM7qK3DWhwp-6Jw_JWs'
+      apiKey: 'Enter API Key Here!'
     })
   ],
   providers: [],
